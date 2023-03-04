@@ -5,26 +5,36 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>INVO Academy JS Starter with Vite</title>
+  <title>Paymnent summary</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/85cb3a1262.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./src/pages/home-page/css/home-page.css">
 </head>
-
-<!-- In order to start your challenge, remove all the content inside <div id="home-page"></div> and start coding :) -->
-
 <body>
-  <div id="home-page">
-    <div>
-      <img src="/public/images/javascript.svg" class="logo vanilla" alt="JavaScript logo" />
-      <h1>INVO Academy JS Starter with Vite</h1>
-      <p>
-        See the README.md for more information on how to start your challenge.
-      </p>
-      <div class="card">
-        <button id="counter" type="button"></button>
-      </div>
+    <div id="home-page">
+        <div class="card">
+            <img src="/public/images/obraz.png" alt="Girl listening to song">
+            <div class="card--body">
+                <h1 class="order--title">Order Summary</h1>
+                <p class="order--desc">You're close! Confirm your purchase and complete your order in the next step</p>
+                <div class="order--item">
+                    <div class="order--left">
+                        <i class="fa-brands fa-itunes-note"></i>
+                        <div class="title--and--pricing">
+                            <h2>Annual Plan</h2>
+                            <p>$58.99 / year</p>
+                        </div>
+                    </div>
+                    <a href="#" class="anchor">Change</a>
+                </div>
+                <button class="card--button" id="proceed">Proceed to Payment</button>
+                <a href="#" class="card--cancel anchor" >Cancel order</a>
+            </div>
+        </div>
     </div>
-  </div>
 
-  <script type="module" src="/src/global-scripts/main.js"></script>
   <script type="module" src="/src/pages/home-page/scripts/home-page.js"></script>
 </body>
 

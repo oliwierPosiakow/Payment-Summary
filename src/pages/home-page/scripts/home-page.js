@@ -3,6 +3,9 @@
 
 import '../styles/home-page.scss'
 
-import { setupCounter } from '../../../global-scripts/scripts/counter/counter.js'
+const buttonEl = document.getElementById('proceed')
 
-setupCounter(document.querySelector('#counter'))
+buttonEl.addEventListener('click', () => {
+    console.log('first')
+    buttonEl.innerHTML = '<img src="./public/images/loading.gif" alt="loading" id="loading">'
+})
