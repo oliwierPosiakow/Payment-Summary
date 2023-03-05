@@ -7,5 +7,5 @@ const buttonEl = document.getElementById('proceed')
 
 buttonEl.addEventListener('click', () => {
     console.log('first')
-    buttonEl.innerHTML = '<img src="./public/images/loading.gif" alt="loading" id="loading">'
+    buttonEl.innerHTML = '<img src="./images/loading.gif" alt="loading" id="loading">'
 })
